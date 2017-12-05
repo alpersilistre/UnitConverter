@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row" style="margin-top: 30px;">
+    <div class="col-md-12">
+        <div class="bs-component">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a data-toggle="tab" href="#length">Length</a>
+                </li>
+                <li>
+                    <a data-toggle="tab" href="#weight">Weight</a>
+                </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="length">
+                    <div class="row">
+                        <div class="col-md-6">                            
+                            <div class="row col-md-12">
+                                <div class="form-group">
+                                    <label for="metricSelect" class="control-label">Metric:</label>
+                                    <select class="form-control" id="metricSelect">
+                                        <option value="nanometer" >Nanometer</option>
+                                        <option value="micrometer" >Micrometer</option>
+                                        <option value="millimeter" >Millimeter</option>
+                                        <option value="centimeter" >Centimeter</option>
+                                        <option value="meter" >Meter</option>
+                                        <option value="kilometer" >Kilometer</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">From:</label>
+                                    <input class="form-control" type="text" id="fromInput"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row col-md-12">
+                                <div class="form-group">
+                                    <label for="imperialSelect" class="control-label">Imperial:</label>                                                                         
+                                    <select class="form-control" id="imperialSelect">
+                                        <option value="inch" >Inch</option>
+                                        <option value="foot" >Foot</option>
+                                        <option value="yard" >Yard</option>
+                                        <option value="mile" >Mile</option>
+                                    </select>                                    
+                                </div>
+                            </div>
+                            <div class="row col-md-12">
+                                <div class="form-group">
+                                    <label class="control-label">To:</label>
+                                    <input class="form-control" type="text" disabled="disabled" id="toInput"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-top: 15px;">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="well well-lg" id="resultScreen">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="weight">
+                    <p>Soon.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
